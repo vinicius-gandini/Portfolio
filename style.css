@@ -24,27 +24,33 @@ nav {
 ul {
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width: 30%;
 }
 
 li {
     display: flex;
 }
 
-li#home span{
-    font-size: 22px;
-}
-
-.nav-itens img{
+.nav-itens img, div#home img {
     height: 25px;
     width: 25px;
     margin-right: 5px;
 }
 
-.nav-itens a {
+.nav-itens a{
     display: flex;
     align-items: center;
     font-size: 18px;
+}
+
+/*=======================================================================================*/
+
+div#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    font-size: 22px;
 }
 
 .description {
@@ -52,16 +58,18 @@ li#home span{
 }
 
 div#myself {
-    background-image: linear-gradient(to right, rgb(70, 191, 223, 0.7) , transparent 1%, transparent 99%, rgb(70, 191, 223, 0.7));
+    border-left: 3px solid #46bfdf;
+    border-right: 3px solid #46bfdf;
+    /*background-image: linear-gradient(to right, rgb(70, 191, 223, 0.7) , transparent 1%, transparent 99%, rgb(70, 191, 223, 0.7));*/
     margin-top: 8vh;
 }
 
 div#myself img{
-    height: 400px;
+    height: 400px; 
     width: 550px;
 }
 
-div#myself #title {
+div#myself #hello {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -70,9 +78,50 @@ div#myself #title {
     text-shadow: 1px 1px 2px #46bfdf;
 }
 
-div#title span#presentation {
+div#hello span#presentation {
     width: 40%;
 }
 span#me {
     font-size: 26px;
+}
+
+/*=======================================================================================*/
+
+div#projects {
+    border-left: 3px solid #20bf55;
+    border-right: 3px solid #20bf55;
+    padding-top: 40px;
+    font-size: 26px;
+}
+
+div#portfolio, div#questfinder {
+    display: block;
+    margin-top: 30px;
+    margin-right: 50px;
+    margin-left: 50px;
+    height: 150px;
+    width: 150px;
+    border: 4px solid #20bf55;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #37464d;
+    background-color: #37464d;
+    text-align: center;
+}
+
+div#room img {
+    height: 80px;
+    width: 80px;
+}
+
+div#projects #title {
+    display: block;
+    text-shadow: 1px 1px 2px #20bf55;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+div#projects #room {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
