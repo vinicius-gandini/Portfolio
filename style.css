@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #131b1f;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #37464d;
+    min-height: 8vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+li {
+    display: flex;
+}
+
+li#home span{
+    font-size: 22px;
+}
+
+.nav-itens img{
+    height: 25px;
+    width: 25px;
+    margin-right: 5px;
+}
+
+.nav-itens a {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.description {
+    padding: 0 80px 0 80px;
+}
+
+div#myself {
+    background-image: linear-gradient(to right, rgb(70, 191, 223, 0.7) , transparent 1%, transparent 99%, rgb(70, 191, 223, 0.7));
+    margin-top: 8vh;
+}
+
+div#myself img{
+    height: 400px;
+    width: 550px;
+}
+
+div#myself #title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 36px;
+    text-shadow: 1px 1px 2px #46bfdf;
+}
+
+div#title span#presentation {
+    width: 40%;
+}
+span#me {
+    font-size: 26px;
+}
