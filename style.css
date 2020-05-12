@@ -9,6 +9,29 @@ body {
     color: #fff;
 }
 
+/*=================================================================================================*/
+/*Scrollbar*/
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #37464d;
+}
+
+::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #37464d;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #fff;
+}
+/*=================================================================================================*/
+
 nav {
     display: flex;
     justify-content: center;
@@ -43,7 +66,7 @@ li {
     font-size: 18px;
 }
 
-/*=======================================================================================*/
+/*=================================================================================================*/
 
 div#home {
     display: flex;
@@ -58,10 +81,11 @@ div#home {
 }
 
 div#myself {
-    border-left: 3px solid #46bfdf;
-    border-right: 3px solid #46bfdf;
+    border-left: 4px solid #46bfdf;
+    border-right: 4px solid #46bfdf;
     /*background-image: linear-gradient(to right, rgb(70, 191, 223, 0.7) , transparent 1%, transparent 99%, rgb(70, 191, 223, 0.7));*/
     margin-top: 8vh;
+    padding-bottom: 30px;
 }
 
 div#myself img{
@@ -85,20 +109,19 @@ span#me {
     font-size: 26px;
 }
 
-/*=======================================================================================*/
+/*=================================================================================================*/
 
 div#projects {
-    border-left: 3px solid #20bf55;
-    border-right: 3px solid #20bf55;
+    border-left: 4px solid #20bf55;
+    border-right: 4px solid #20bf55;
     padding-top: 40px;
     font-size: 26px;
+    padding-bottom: 30px;
 }
 
 div#portfolio, div#questfinder {
     display: block;
-    margin-top: 30px;
-    margin-right: 50px;
-    margin-left: 50px;
+    margin: 50px 30px;
     height: 150px;
     width: 150px;
     border: 4px solid #20bf55;
@@ -124,4 +147,29 @@ div#projects #room {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 50px 0 50px 0;
+}
+
+/*=======================================================================================*/
+
+div#hobbie {
+    border-left: 4px solid #8900f2;
+    border-right: 4px solid #8900f2;
+    padding-top: 40px;
+    font-size: 26px;
+    background-image: url("images/string-instrument.png");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: 90% 90%;
+}
+
+div#hobbie #about {
+    display: block;
+    text-shadow: 1px 1px 2px #8900f2;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+div#hobbie p {
+    margin-bottom: 20px;
 }
