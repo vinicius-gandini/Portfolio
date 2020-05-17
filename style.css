@@ -7,6 +7,11 @@
 body {
     background-color: #131b1f;
     color: #fff;
+    max-width: 100%;
+}
+
+html {
+    max-width: 100%;
 }
 
 /*=================================================================================================*/
@@ -47,7 +52,7 @@ nav {
 ul {
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width: 50%;
 }
 
 li {
@@ -73,6 +78,10 @@ div#topbar {
     display: none;
 }
 
+div#float_menu {
+    display: none;
+}
+
 .nav-itens a {
     display: flex;
     align-items: center;
@@ -84,11 +93,11 @@ div#myself img{
     width: 550px;
 }
 
-@media screen and (max-width: 560px) {
-    .nav-itens li {
-        display: none;
-    }   
+@media screen and (max-width: 600px) {
 
+    div.home {
+        width: 50% !important;
+    }
     .home span{
         display: none;
     }
@@ -112,57 +121,35 @@ div#myself img{
     }
 
     .responsive {
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        position: absolute;
+        position: fixed;
         top: 8vh;
         right: 0;
-        width: 30%;
+        width: 40%;
         background-color: #37464d;
     }
 
-    .responsive1 {
+    .nav-itens.responsiveNav {
         display: flex;
         flex-direction: column;
-        position: absolute;
-        right: 0;
-        top: 8vh;
-        width: 30%;
-        background-color: #37464d;
+    }
+    .nav-itens.responsiveNav li {
+        margin: 10px 0 20px 10px;
+    }
+    .nav-itens.responsiveNav a{
+        font-size: 22px;
     }
 
-    .responsive2 {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        margin-top: 15px;
-        right: 0;
-        top: 16vh;
-        width: 30%;
-        background-color: #37464d;
-    }
-
-    .responsive1 li {
-        float: right;
-        display: block;
-        margin-top: 10px;
-        margin-left: 10px;
-    }
-    .responsive2 li {
-        float: right;
-        display: block;
-        margin-top: 10px;
-        margin-left: 10px;
-    }
-
-    .responsive2 li:nth-child(2) {
-        margin-bottom: 10px;
-    }
+    .nav-itens {
+        display: none;
+    } 
 
     div#myself img {
         height: 200px;
         width: 350px;
+    }
+
+    div#contact span {
+        display: none;
     }
 }
 
@@ -172,7 +159,7 @@ div.home {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 30%;
     font-size: 22px;
 }
 
@@ -187,8 +174,6 @@ div#myself {
     margin-top: 8vh;
     padding-bottom: 30px;
 }
-
-
 
 div#myself #hello {
     display: flex;
