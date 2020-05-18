@@ -93,6 +93,14 @@ div#myself img{
     width: 550px;
 }
 
+.nav-itens a:hover, .home a:hover {
+    background-color: #aaa;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: scale(1.2);
+    
+}
+
 @media screen and (max-width: 600px) {
 
     div.home {
@@ -142,6 +150,9 @@ div#myself img{
     .nav-itens {
         display: none;
     } 
+    .nav-itens li:hover {
+        width: 100%;
+    }
 
     div#myself img {
         height: 200px;
@@ -149,7 +160,7 @@ div#myself img{
     }
 
     div#contact span {
-        display: none;
+        font-size: 16px;
     }
 }
 
