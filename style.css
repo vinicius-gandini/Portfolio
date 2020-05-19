@@ -139,16 +139,6 @@ div#myself img{
         background-color: #37464d;
     }
 
-    .responsive2 {
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        top: 20vh; 
-        right: 0;
-        width: 40%;
-        background-color: #37464d;
-    }
-
     .responsive li {
         display: flex;
         flex-direction: column;
@@ -156,14 +146,6 @@ div#myself img{
         font-size: 22px;
     }
 
-    .responsive2 li {
-        display: flex;
-        flex-direction: column;
-        margin: 10px 0 20px 10px;
-        font-size: 22px;
-    }
-
-    
     .nav-itens li:hover {
         width: 100%;
     }
